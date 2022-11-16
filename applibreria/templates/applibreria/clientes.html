@@ -1,0 +1,10 @@
+{% extends 'applibreria/base.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}  
+<h1 style="color: bg-dark;">Portal de Clientes</h1>
+<a class="navbar-brand" style="color: grey" href="">Iniciar sesión</a>
+<a class="navbar-brand" href="{% url 'libreria-clientes-crear' %}">Registrarse</a>
+
+{% endblock %}

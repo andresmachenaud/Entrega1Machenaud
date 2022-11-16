@@ -1,0 +1,22 @@
+{% extends 'applibreria/base.html' %}
+
+{% block contenidoQueCambia %}  
+
+<table>
+    <tr>
+        <th scope = "col">Título</th>
+        <th scope = "col">Autor</th>
+        <th scope = "col">Año</th>
+        <th scope = "col">Editorial</th>
+    </tr>
+    <tr>
+    {% for libro in libros %}
+            <td>{{libro.titulo}}</td>
+            <td>{{libro.autor}}</td>
+            <td>{{libro.año}}</td>
+            <td>{{libro.editorial}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}

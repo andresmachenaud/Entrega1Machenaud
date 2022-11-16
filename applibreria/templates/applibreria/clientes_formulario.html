@@ -1,0 +1,16 @@
+{% extends 'applibreria/base.html' %}
+
+{% block contenidoQueCambia %}  
+
+<h1 style=" color: bg-dark">Registrar Cliente</h1>
+<p>
+<form action="{% url 'libreria-clientes-crear' %}" method="POST">
+    {% csrf_token %}
+
+    {{formulario.as_p}}
+
+    <input type="submit" value="Enviar">
+
+</form>
+</p>
+{% endblock %}

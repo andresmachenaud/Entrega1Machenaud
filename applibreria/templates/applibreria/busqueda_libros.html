@@ -1,0 +1,15 @@
+{% extends 'applibreria/base.html' %}
+
+{% block contenidoQueCambia %}  
+
+<form action="{% url 'libreria-libros-buscar-resultados' %}" method="GET">
+ 
+    <p>Título: <input type="text" name="titulo_libro"></p>
+
+    <p>Autor: <input type="text" name="nombre_autor"></p>
+
+    <input type="submit" value="Buscar">
+
+</form>
+
+{% endblock %}

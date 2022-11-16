@@ -1,0 +1,20 @@
+{% extends 'applibreria/base.html' %}
+
+{% block contenidoQueCambia %}  
+
+<h1 style=" color: bg-dark">Registrar Empleado</h1>
+<p>
+<form action="{% url 'libreria-empleados-crear' %}" method="POST">
+    {% csrf_token %}
+
+    <p>Nombre: <input type="text" name="nombre"></p>
+
+    <p>Apellido: <input type="text" name="apellido"></p>
+
+    <p>Email: <input type="email" name="email"></p>
+
+    <input type="submit" value="Enviar">
+
+</form>
+</p>
+{% endblock %}

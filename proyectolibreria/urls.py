@@ -19,5 +19,5 @@ from applibreria.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('libreria/', include('applibreria.urls')),
+    path('', include('applibreria.urls')),
 ]

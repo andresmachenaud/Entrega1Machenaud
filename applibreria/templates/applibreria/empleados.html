@@ -1,0 +1,11 @@
+{% extends 'applibreria/base.html' %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}  
+<h1 style="color: bg-dark;">Portal de Empleados</h1>
+
+<p><a class="navbar-brand" href="{% url 'libreria-empleados-crear' %}">Registrarse (empleados)</a></p>
+<p><a class="navbar-brand" href="{% url 'libreria-libros-crear' %}">Cargar libro a la web</a></p>
+
+{% endblock %}
